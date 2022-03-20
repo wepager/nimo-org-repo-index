@@ -1,4 +1,15 @@
-
+   <style onload="
+            var UI_STYLE=this.parentElement.querySelector('link[key=\'UI_STYLE\']')
+            if (!UI_STYLE.sheet) {
+                // UI_STYLE.remove()
+                var ne=document.createElement('style')
+                 ne.setAttribute('key','UI_STYLE')
+                ne.innerText='@import \'/lib/wepage-user-asset/<%=id%>/style/style.css\';'
+                UI_STYLE.replaceWith(ne)
+                }
+            ">
+            </style>
+            <link rel="stylesheet" href="/lib/wepage-user-asset/<%=id%>/style/style.css" key="UI_STYLE">
         <h1 class="center">
             <img src="img/wepage icon.min.420.png" style="padding: 0 6px;" width="50">
             Hello! this is my app
