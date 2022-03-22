@@ -4,13 +4,13 @@
                 // UI_STYLE.remove()
                 var ne=document.createElement('style')
                  ne.setAttribute('key','UI_STYLE')
-                ne.innerText='@import \'/lib/wepage-user-asset/wepager/style/style.css\';'
+                ne.innerText='@import \'/lib/wepage-user-asset/<%=id%>/style/style.css\';'
                 UI_STYLE.replaceWith(ne)
                 }
             ">
             </style>
-            <link rel="stylesheet" href="/lib/wepage-user-asset/wepager/style/style.css" key="UI_STYLE">
+            <link rel="stylesheet" href="/lib/wepage-user-asset/<%=id%>/style/style.css" key="UI_STYLE">
         <h1 class="center">
-            <img src="/lib/wepage-user-asset/wepager/image/wepage icon.min.420.png" style="padding: 0 6px;" width="50">
+            <img src="/lib/wepage-user-asset/<%=id%>/image/wepage icon.min.420.png" style="padding: 0 6px;" width="50">
             Wepages Official Logo
         </h1>
