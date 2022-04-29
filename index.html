@@ -7,6 +7,7 @@
 
 
 
+
    
 
 
@@ -30,12 +31,15 @@
     </x-menu><x-body>
             <header>
                          <div class="header">
-                            <div class="header-left">
+                            <div class="header-left" dev-focused="">
                            
-                                <x-ct>Good</x-ct>
+                                <img-wrapper loaded="true">
+                        <img onload="this.parentElement.setAttribute('loaded',true)" onerror="this.parentElement.setAttribute('loaded',false)" src="https://raw.githubusercontent.com/wepager/nimo-org-repo-asset-image/main/145909.png">
+                        <img-cover></img-cover>
+                        </img-wrapper><x-ct>Wepage</x-ct>
                             </div>
                             <div class="header-center">
-                                <x-ct>Center</x-ct>
+                                <x-ct><br></x-ct>
                             </div>
                             <div class="header-right">
                                 <x-ct><br></x-ct>
@@ -58,7 +62,7 @@
                 <h1 style="font-size: 32px; text-align: start; display: inline-block; background-color: rgb(170, 171, 221); padding-left: 24px; padding-right: 24px; border-radius: 100px; color: rgb(255, 255, 255);" x-x-center="true"><x-ct>
                     Hello
                 </x-ct></h1>
-                <p dev-focused=""><x-ct> 
+                <p><x-ct> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde debitis nobis consectetur asperiores enim animi ipsam eligendi nesciunt, perferendis, eos labore harum mollitia sit quia iste&nbsp; iusto! Quis, asperiores illo?</x-ct></p>
             </article>
         </x-body>
