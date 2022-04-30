@@ -61,7 +61,10 @@
                 <h1 style="font-size: 32px; text-align: start; display: block; background-color: rgba(0, 0, 0, 0); padding-left: 24px; padding-right: 24px; border-radius: 100px; color: rgb(17, 33, 77);"><x-ct>
                     Hello
                 </x-ct></h1>
-                <p dev-focused=""><x-ct> 
+                <img-wrapper loaded="true" style="background-color: rgba(0, 0, 0, 0);" dev-focused="">
+                        <img onload="this.parentElement.setAttribute('loaded',true)" onerror="this.parentElement.setAttribute('loaded',false)" src="https://raw.githubusercontent.com/wepager/nimo-org-repo-asset-image/main/course_2462_image.png">
+                        <img-cover></img-cover>
+                        </img-wrapper><p><x-ct> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde debitis nobis consectetur asperiores enim animi ipsam eligendi nesciunt, perferendis, eos labore harum mollitia sit quia iste&nbsp; iusto! Quis, asperiores illo?</x-ct></p>
             </article>
         </x-body>
