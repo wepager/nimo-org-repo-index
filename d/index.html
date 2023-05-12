@@ -1,4 +1,5 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="/lib/wepage-user-asset/wepager/style/style.css" key="theme"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><template icons="">
+<!DOCTYPE html>
+<head><link rel="stylesheet" href="/lib/wepage-user-asset/wepager/style/style.css" key="theme"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><template icons="">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" type="menu">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -10,6 +11,7 @@
         </svg>
     </template><style key="prototype"></style></head>
 <body>
+
 
 
 
@@ -28,10 +30,19 @@
     <x-layout>
         <x-body>
             <article name="window-background">
-                <h1 dev-focused="">Hello there&nbsp;</h1>
+                <h1>Hello there&nbsp;</h1>
                 <p>
                     This session is currently empty.</p>
-            </article>
+            <img-wrapper>
+                        <img onload="this.parentElement.setAttribute('loaded',true)" onerror="this.parentElement.setAttribute('loaded',false)" src="https://raw.githubusercontent.com/wepager/nimo-org-repo-asset-image/main/wallpaper-0%20(1).jpg">
+                        <img-cover></img-cover>
+                        </img-wrapper><img-wrapper>
+                        <img onload="this.parentElement.setAttribute('loaded',true)" onerror="this.parentElement.setAttribute('loaded',false)" src="https://raw.githubusercontent.com/wepager/nimo-org-repo-asset-image/main/wallpaper-1.jpg">
+                        <img-cover></img-cover>
+                        </img-wrapper><img-wrapper>
+                        <img onload="this.parentElement.setAttribute('loaded',true)" onerror="this.parentElement.setAttribute('loaded',false)" src="https://raw.githubusercontent.com/wepager/nimo-org-repo-asset-image/main/317845280_1319757478864957_7737188218790859590_n%20(1).jpg">
+                        <img-cover></img-cover>
+                        </img-wrapper></article>
         </x-body>
     </x-layout>
     
@@ -39,4 +50,4 @@
 
 
 
-</body></html>
+</body>
