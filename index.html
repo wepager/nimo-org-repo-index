@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<head><link rel="stylesheet" href="/lib/wepage-user-asset/wepager/style/style.css" key="theme"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><script key="global">
-                    function toggle_menu(elm) {
-                        if (elm.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('with-header') === 'off') {
-                            elm.innerHTML = document.querySelector('template[icons]').content.querySelector('svg[type=\'x\']').outerHTML
-                            elm.parentElement.parentElement.parentElement.parentElement.parentElement.setAttribute('with-header', 'on')
-                        } else if (elm.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('with-header') === 'on') {
-                            elm.innerHTML = document.querySelector('template[icons]').content.querySelector('svg[type=\'menu\']').outerHTML
-                            elm.parentElement.parentElement.parentElement.parentElement.parentElement.setAttribute('with-header', 'off')
-                        }
-                    }
-                </script><template icons="">
+<!DOCTYPE html><html>
+<head><link rel="stylesheet" href="/lib/wepage-user-asset/wepager/style/style.css" key="theme"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><template icons="">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" type="menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" type="x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-    </template><style key="prototype"></style><script key="global">
+    </template><style key="prototype"></style></head>
+<body>
+<script key="global">
                     function toggle_menu(elm) {
                         if (elm.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('with-header') === 'off') {
                             elm.innerHTML = document.querySelector('template[icons]').content.querySelector('svg[type=\'x\']').outerHTML
@@ -22,8 +14,18 @@
                             elm.parentElement.parentElement.parentElement.parentElement.parentElement.setAttribute('with-header', 'off')
                         }
                     }
-                </script></head>
-<body>
+                </script><script key="global">
+                    function toggle_menu(elm) {
+                        if (elm.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('with-header') === 'off') {
+                            elm.innerHTML = document.querySelector('template[icons]').content.querySelector('svg[type=\'x\']').outerHTML
+                            elm.parentElement.parentElement.parentElement.parentElement.parentElement.setAttribute('with-header', 'on')
+                        } else if (elm.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('with-header') === 'on') {
+                            elm.innerHTML = document.querySelector('template[icons]').content.querySelector('svg[type=\'menu\']').outerHTML
+                            elm.parentElement.parentElement.parentElement.parentElement.parentElement.setAttribute('with-header', 'off')
+                        }
+                    }
+                </script>
+
 
 
 
@@ -74,8 +76,8 @@
                         <img-cover></img-cover>
                         </img-wrapper><h1 style="font-size: 16px;">WePage&nbsp;</h1></div></div>
     </header><article name="window-background">
-                <h1><x-ct style="display: flex; font-size: 45px; background-color: rgb(170, 171, 221); border-radius: 30px; padding-left: 12px; padding-right: 12px; color: rgb(255, 255, 255);">
-                    Hello There</x-ct><img-wrapper>
+                <h1><x-ct style="display: flex; font-size: 45px; background-color: rgb(170, 171, 221); border-radius: 30px; padding-left: 12px; padding-right: 12px; color: rgb(255, 255, 255);" dev-focused="">
+                    Hello There.</x-ct><img-wrapper>
                         <img onload="this.parentElement.setAttribute('loaded',true)" onerror="this.parentElement.setAttribute('loaded',false)" src="/lib/wepage-user-asset/wepager/image/wallpaper-0 (1).jpg">
                         <img-cover></img-cover>
                         </img-wrapper></h1>
@@ -90,4 +92,6 @@
             
 
 
+
 </body>
+</html>
